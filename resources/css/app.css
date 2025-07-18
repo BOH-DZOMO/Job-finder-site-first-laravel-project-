@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source "../views";
+
+@theme {
+    --color-black: #060606;
+    --font-display: "Hanken Grotesk", "sans-serif";
+    --text-2xs: "10px";
+}
+
+@label{
+    
+}
