@@ -24,6 +24,7 @@ Route::middleware("guest")->group(function () {
     Route::post('/register', [RegisteredUserController::class, 'store']);
     Route::get('/login', [SessionController::class, 'create']);
     Route::post('/login', [SessionController::class, 'store']);
+    // Route::post('http://127.0.0.1:8000/auth/google/callback')
 });
 
 
