@@ -32,9 +32,9 @@ class SocialAuthController extends Controller
 
             Auth::login($user);
 
-            return redirect()->route('home');
+            return redirect('/');
         } catch (InvalidStateException $e) {
-            return redirect()->route('login')->with('error', 'Login canceled or failed. Please try again.');
+            return redirect('/login')->with('error', 'Login canceled or failed. Please try again.');
         }
     }
 }
